@@ -3,7 +3,7 @@ package util;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class ImageHelper
+public class Img
 {
     // This method is modified from the code written by Paul Rosin, Matt Gee, and Graham Daniell @ http://goo.gl/RYgo3G
     public static int[][][] readPPM(String filename)
@@ -61,7 +61,7 @@ public class ImageHelper
     // quick test
     public static void main(String[] args)
     {
-        int[][][] image = util.ImageHelper.readPPM("/Users/lee/Dropbox/VIC/assn2/images/rgb/b.ppm");
+        int[][][] image = util.Img.readPPM("/Users/lee/Dropbox/VIC/assn2/images/rgb/b.ppm");
         System.out.printf("%d %d %d \n", image.length, image[0].length, image[0][0].length);
         System.out.printf("i=0 %d\n", image[0][5][5]); // 0 ~ r
         System.out.printf("i=1 %d\n", image[1][5][5]); // 1 ~ g
