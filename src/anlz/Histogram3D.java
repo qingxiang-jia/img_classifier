@@ -4,13 +4,15 @@ import java.util.Arrays;
 
 public class Histogram3D
 {
-    int binSize;
+    int binSize, w, h;
     int[][][] rgb;
 
-    public Histogram3D(int binSize, int[][][] rgb)
+    public Histogram3D(int binSize, int[][][] rgb, int w, int h)
     {
         this.binSize = binSize;
         this.rgb = rgb;
+        this.w = w;
+        this.h = h;
     }
 
     public void out()
@@ -23,12 +25,13 @@ public class Histogram3D
     // returns the L1 norm of h1 and h2
     public static double l1Norm(Histogram3D h1, Histogram3D h2)
     {
-        assert(h1.binSize == h2.binSize);
+        assert(h1.binSize == h2.binSize && h1.w == h2.w && h1.h == h2.h);
         double diff = 0;
         for (int r = 0; r < h1.rgb.length; r++)
             for (int g = 0; g < h1.rgb[0].length; g++)
                 for (int b = 0; b < h1.rgb[0][0].length; b++)
                     diff += Math.abs(h1.rgb[r][g][b]/255.0 - h2.rgb[r][g][b]/255.0);
-        return 1 - diff; // waiting for Piazza reply
+        double res = 1 - (diff / (2 * h1.w * h1.h));
+        return res; // suggested by Prof. K
     }
 }

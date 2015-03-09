@@ -3,6 +3,7 @@ package steps;
 import anlz.Entry2D;
 import anlz.Histogram3D;
 import anlz.LikeUnlike;
+import view.PageGen;
 
 import java.util.Arrays;
 
@@ -25,9 +26,9 @@ public class Step1
             for (int j = 0; j < 40; j++)
             {
                 if (i == j)
-                    l1Norm[i][j] = 1; // no need to compute
+                    l1Norm[i][j] = 1; // no need to compute, pic1 is the same as pic1, similarity 1
                 else if (i > j)
-                    l1Norm[i][j] = l1Norm[j][i]; // must have done already
+                    l1Norm[i][j] = l1Norm[j][i]; // must have done comparison already
                 else
                     l1Norm[i][j] = Histogram3D.l1Norm(histograms[i], histograms[j]);
             }
@@ -36,7 +37,7 @@ public class Step1
         for (int i = 0; i < 40; i++)
         {
             for (int j = 0; j < 40; j++)
-                l1NormTable[i][j] = new Entry2D(i, j, l1Norm[i][j]);
+                l1NormTable[i][j] = new Entry2D(j, l1Norm[i][j]);
             Arrays.sort(l1NormTable[i]);
             int[] unlike = new int[4], like = new int[4];
             // fill unlike
@@ -44,7 +45,7 @@ public class Step1
                 unlike[u] = l1NormTable[i][u].getJ();
             // fill like
             for (int l = l1NormTable[i].length - 1; l >= l1NormTable[i].length - 4; l--)
-                like[l] = l1NormTable[i][l].getJ();
+                like[l1NormTable[i].length - 1 - l] = l1NormTable[i][l].getJ();
             basedOnColor[i] = new LikeUnlike(i, like, unlike); // store solution
         }
         return basedOnColor;
@@ -52,6 +53,10 @@ public class Step1
 
     public static void main(String[] args)
     {
-        Step1.runProcedure();
+        LikeUnlike[] step1Res = Step1.runProcedure();
+        for (LikeUnlike item : step1Res)
+            System.out.println(item);
+        PageGen pageGen = new PageGen();
+        pageGen.writePage("out.html", "/Users/lee/Dropbox/VIC/assn2/images/jpg", step1Res);
     }
 }

@@ -9,7 +9,7 @@ public class ColorAnalyzer
         for (int w = 0; w < img[0].length; w++)
             for (int h = 0; h < img[0][0].length; h++)
                 rgb[img[0][w][h] / binSize][img[1][w][h] / binSize][img[2][w][h] / binSize]++;
-        return new Histogram3D(binSize, rgb);
+        return new Histogram3D(binSize, img, img[0].length, img[0][0].length);
     }
 
     // quick test
