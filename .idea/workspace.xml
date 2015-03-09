@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a76770e8-81cb-4323-ac52-6dcbb37ea29e" name="Default" comment="done with step1, but not yet tested Step1, and also need to wait for TA's response.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/PageGen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/TagGen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/anlz/ColorAnalyzer.java" afterPath="$PROJECT_DIR$/src/anlz/ColorAnalyzer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/anlz/Entry2D.java" afterPath="$PROJECT_DIR$/src/anlz/Entry2D.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/anlz/Histogram3D.java" afterPath="$PROJECT_DIR$/src/anlz/Histogram3D.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/anlz/LikeUnlike.java" afterPath="$PROJECT_DIR$/src/anlz/LikeUnlike.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/steps/Step1.java" afterPath="$PROJECT_DIR$/src/steps/Step1.java" />
+    <list default="true" id="a76770e8-81cb-4323-ac52-6dcbb37ea29e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="assn2.iws" />
@@ -570,12 +563,18 @@
       <option name="project" value="LOCAL" />
       <updated>1425253615009</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update the step1 L1 Norm algorithm, add presentation component &quot;view&quot;">
+      <created>1425939260074</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1425939260074</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -595,7 +594,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.221875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32824427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32824427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -620,7 +619,8 @@
     </option>
     <MESSAGE value="restructured the project" />
     <MESSAGE value="done with step1, but not yet tested Step1, and also need to wait for TA's response." />
-    <option name="LAST_COMMIT_MESSAGE" value="done with step1, but not yet tested Step1, and also need to wait for TA's response." />
+    <MESSAGE value="Update the step1 L1 Norm algorithm, add presentation component &quot;view&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update the step1 L1 Norm algorithm, add presentation component &quot;view&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
