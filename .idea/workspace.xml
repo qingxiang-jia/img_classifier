@@ -569,7 +569,13 @@
       <option name="project" value="LOCAL" />
       <updated>1425939260074</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update the step1 L1 Norm algorithm, add presentation component &quot;view&quot;">
+      <created>1425939268890</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1425939268891</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
