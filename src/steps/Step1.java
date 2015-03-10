@@ -1,6 +1,7 @@
 package steps;
 
 import analyze.Entry2D;
+import analyze.GenHist3D;
 import analyze.Histogram3D;
 import analyze.LikeUnlike;
 import view.PageGen;
@@ -18,7 +19,7 @@ public class Step1
         for (int i = 0; i < 40; i++)
         {
             images[i] = util.Img.readPPM(String.format("%s%02d%s", "/Users/lee/Dropbox/VIC/assn2/images/ppm/i", i + 1, ".ppm")); // in case u need the image later
-            histograms[i] = analyze.ColorAnalyzer.analyze(images[i], 32);
+            histograms[i] = GenHist3D.img2Hist3D(images[i], 32);
         }
         // compute L1 norm
         double[][] l1Norm = new double[40][40];

@@ -3,12 +3,12 @@ package analyze;
 public class Histogram
 {
     int binSize, w, h;
-    int[][][] rgb;
+    int[][] laplacian;
 
-    public Histogram(int binSize, int[][][] rgb, int w, int h)
+    public Histogram(int binSize, int[][] laplacian, int w, int h)
     {
         this.binSize = binSize;
-        this.rgb = rgb;
+        this.laplacian = laplacian;
         this.w = w;
         this.h = h;
     }
@@ -16,5 +16,6 @@ public class Histogram
     // returns the L1 norm of h1 and h2
     public static double l1Norm(Histogram h1, Histogram h2)
     {
+
     }
 }

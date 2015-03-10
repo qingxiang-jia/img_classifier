@@ -1,9 +1,9 @@
 package analyze;
 
 // basically step 1
-public class ColorAnalyzer
+public class GenHist3D
 {
-    public static Histogram3D analyze(int[][][] img, int binSize)
+    public static Histogram3D img2Hist3D(int[][][] img, int binSize)
     {
         int[][][] rgb = new int[256 / binSize][256 / binSize][256 / binSize];
         for (int w = 0; w < img[0].length; w++)
@@ -15,7 +15,7 @@ public class ColorAnalyzer
     // quick test
     public static void main(String[] args)
     {
-        Histogram3D histogram = analyze(util.Img.readPPM("/Users/lee/Dropbox/VIC/assn2/images/ppm/i07.ppm"), 32);
+        Histogram3D histogram = img2Hist3D(util.Img.readPPM("/Users/lee/Dropbox/VIC/assn2/images/ppm/i07.ppm"), 32);
         System.out.println(histogram.binSize);
         histogram.out();
     }
