@@ -1,6 +1,6 @@
 package steps;
 
-import anlz.LikeUnlike;
+import analyze.LikeUnlike;
 
 public class Step2
 {
@@ -13,6 +13,7 @@ public class Step2
         {
             images[i] = util.Img.readPPM(String.format("%s%02d%s", "/Users/lee/Dropbox/VIC/assn2/images/ppm/i", i + 1, ".ppm")); // in case u need the image later
             // convert to gray scale
+            int[][] gray = util.Img.RGB2Gray(images[i]);
 
         }
         return basedOnTexture;

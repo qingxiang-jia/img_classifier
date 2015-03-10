@@ -1,4 +1,4 @@
-package anlz;
+package analyze;
 
 // basically step 1
 public class ColorAnalyzer

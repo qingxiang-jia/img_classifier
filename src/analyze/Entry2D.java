@@ -1,4 +1,4 @@
-package anlz;
+package analyze;
 
 // represents an entry in a table, i is row, j is column
 public class Entry2D implements Comparable<Entry2D>

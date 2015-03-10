@@ -1,4 +1,4 @@
-package anlz;
+package analyze;
 
 import java.util.Arrays;
 

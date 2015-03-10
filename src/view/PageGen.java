@@ -1,6 +1,6 @@
 package view;
 
-import anlz.LikeUnlike;
+import analyze.LikeUnlike;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;

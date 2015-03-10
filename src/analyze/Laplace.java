@@ -1,4 +1,4 @@
-package anlz;
+package analyze;
 
 public class Laplace
 {

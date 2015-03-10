@@ -1,8 +1,8 @@
 package steps;
 
-import anlz.Entry2D;
-import anlz.Histogram3D;
-import anlz.LikeUnlike;
+import analyze.Entry2D;
+import analyze.Histogram3D;
+import analyze.LikeUnlike;
 import view.PageGen;
 
 import java.util.Arrays;
@@ -18,7 +18,7 @@ public class Step1
         for (int i = 0; i < 40; i++)
         {
             images[i] = util.Img.readPPM(String.format("%s%02d%s", "/Users/lee/Dropbox/VIC/assn2/images/ppm/i", i + 1, ".ppm")); // in case u need the image later
-            histograms[i] = anlz.ColorAnalyzer.analyze(images[i], 32);
+            histograms[i] = analyze.ColorAnalyzer.analyze(images[i], 32);
         }
         // compute L1 norm
         double[][] l1Norm = new double[40][40];
