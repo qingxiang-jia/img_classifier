@@ -6,6 +6,7 @@ import java.util.StringTokenizer;
 public class Img
 {
     // This method is modified from the code written by Paul Rosin, Matt Gee, and Graham Daniell @ http://goo.gl/RYgo3G
+    // an image is represented as [r/g/b][w][h]
     public static int[][][] readPPM(String filename)
     {
         String line;
@@ -56,6 +57,16 @@ public class Img
         {
             System.out.println("Error: end of stream encountered when reading " + filename);
         } return null;
+    }
+
+    public static int[][] RGB2Gray(int[][][] RGBImg)
+    {
+        int W = RGBImg[0].length, H = RGBImg[0][0].length;
+        int[][] gray = new int[W][H];
+        for (int w = 0; w < W; w++) // compute gray image
+            for (int h = 0; h < H; h++)
+                gray[w][h] = (RGBImg[0][w][h] + RGBImg[1][w][h] + RGBImg[2][w][h]) / 3;
+        return gray;
     }
 
     // quick test
