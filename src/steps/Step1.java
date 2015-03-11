@@ -58,6 +58,6 @@ public class Step1
         for (LikeUnlike item : step1Res)
             System.out.println(item);
         PageGen pageGen = new PageGen();
-        pageGen.writePage("out.html", "/Users/lee/Dropbox/VIC/assn2/images/jpg", step1Res);
+        pageGen.writePage("step1.html", "/Users/lee/Dropbox/VIC/assn2/images/jpg", step1Res);
     }
 }

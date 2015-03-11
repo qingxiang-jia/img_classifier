@@ -4,15 +4,16 @@ import java.util.Arrays;
 
 public class Histogram3D
 {
-    int binSize, w, h;
+    int binSize, w, h, ignoreCount;
     int[][][] rgb;
 
-    public Histogram3D(int binSize, int[][][] rgb, int w, int h)
+    public Histogram3D(int binSize, int[][][] rgb, int w, int h, int ignoreCount)
     {
         this.binSize = binSize;
         this.rgb = rgb;
         this.w = w;
         this.h = h;
+        this.ignoreCount = ignoreCount;
     }
 
     public void out()
@@ -31,7 +32,7 @@ public class Histogram3D
             for (int g = 0; g < h1.rgb[0].length; g++)
                 for (int b = 0; b < h1.rgb[0][0].length; b++)
                     diff += Math.abs(h1.rgb[r][g][b] - h2.rgb[r][g][b]);
-        double res = 1 - (diff / (2 * h1.w * h1.h)); // suggested by Prof. K
+        double res = 1 - (diff / ((h1.w * h1.h - h1.ignoreCount) + (h2.w * h2.h - h2.ignoreCount))); // suggested by Prof. K
         return res;
     }
 }

@@ -4,6 +4,7 @@ import analyze.Entry2D;
 import analyze.GenHist;
 import analyze.Histogram;
 import analyze.LikeUnlike;
+import view.PageGen;
 
 import java.util.Arrays;
 
@@ -52,5 +53,14 @@ public class Step2
             basedOnTexture[i] = new LikeUnlike(i, like, unlike); // store solution
         }
         return basedOnTexture;
+    }
+
+    public static void main(String[] args)
+    {
+        LikeUnlike[] step2Res = Step2.runProcedure();
+        for (LikeUnlike item : step2Res)
+            System.out.println(item);
+        PageGen pageGen = new PageGen();
+        pageGen.writePage("step2.html", "/Users/lee/Dropbox/VIC/assn2/images/jpg", step2Res);
     }
 }
