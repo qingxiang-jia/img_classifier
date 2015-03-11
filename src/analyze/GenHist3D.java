@@ -7,9 +7,10 @@ public class GenHist3D
     {
         int[][][] rgb = new int[256 / binSize][256 / binSize][256 / binSize];
         for (int w = 0; w < img[0].length; w++)
-            for (int h = 0; h < img[0][0].length; h++) {
+            for (int h = 0; h < img[0][0].length; h++)
+            {
+                if (img[0][w][h] == 0 && img[1][w][h] == 0 && img[2][w][h] == 0) continue; // <- ignoring black background
                 rgb[img[0][w][h] / binSize][img[1][w][h] / binSize][img[2][w][h] / binSize]++;
-                if (img[0][w][h] == 0 && img[1][w][h] == 0 && img[2][w][h] == 0) System.out.println("black");
             }
         return new Histogram3D(binSize, img, img[0].length, img[0][0].length);
     }
