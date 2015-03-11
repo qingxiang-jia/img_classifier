@@ -21,6 +21,6 @@ public class Histogram
         double sumDiff = 0.0;
         for (int n = 0; n < N; n++)
             sumDiff += Math.abs(h1.bin[n] - h2.bin[n]);
-        return
+        return 0.0;
     }
 }
