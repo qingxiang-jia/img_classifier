@@ -49,6 +49,7 @@ public class Step1
                 like[l1NormTable[i].length - 1 - l] = l1NormTable[i][l].getJ();
             basedOnColor[i] = new LikeUnlike(i, like, unlike); // store solution
         }
+        // for most alike/unlike, just compute the sum of l1 norm, and find the max/min
         return basedOnColor;
     }
 

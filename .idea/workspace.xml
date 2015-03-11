@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a76770e8-81cb-4323-ac52-6dcbb37ea29e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/analyze/GenHist3D.java" afterPath="$PROJECT_DIR$/src/analyze/GenHist3D.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/analyze/Histogram3D.java" afterPath="$PROJECT_DIR$/src/analyze/Histogram3D.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ass2-short.pdf" afterPath="$PROJECT_DIR$/ass2-short.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/steps/Step1.java" afterPath="$PROJECT_DIR$/src/steps/Step1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/steps/Step2.java" afterPath="$PROJECT_DIR$/src/steps/Step2.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="assn2.iws" />
@@ -44,8 +42,8 @@
       <file leaf-file-name="Step2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/steps/Step2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="518" max-vertical-offset="1065">
-              <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="438" max-vertical-offset="1065">
+              <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GenHist3D.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GenHist3D.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/analyze/GenHist3D.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19660194" vertical-offset="39" max-vertical-offset="540">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+              <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -83,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Step1.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Step1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/steps/Step1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="1035">
-              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.5135566" vertical-offset="338" max-vertical-offset="1050">
+              <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,8 +141,8 @@
         <option value="$PROJECT_DIR$/src/analyze/Histogram.java" />
         <option value="$PROJECT_DIR$/src/steps/Step2.java" />
         <option value="$PROJECT_DIR$/src/analyze/Histogram3D.java" />
-        <option value="$PROJECT_DIR$/src/steps/Step1.java" />
         <option value="$PROJECT_DIR$/src/analyze/GenHist3D.java" />
+        <option value="$PROJECT_DIR$/src/steps/Step1.java" />
       </list>
     </option>
   </component>
@@ -627,7 +625,13 @@
       <option name="project" value="LOCAL" />
       <updated>1426094640752</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="updated step1 normalization algorithm">
+      <created>1426097219457</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1426097219457</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -652,7 +656,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1640625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32824427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -685,7 +689,8 @@
     <MESSAGE value="experimenting step1's reducing black ground" />
     <MESSAGE value="ignore black color for step1" />
     <MESSAGE value="finished step2 (excluding the four part)" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished step2 (excluding the four part)" />
+    <MESSAGE value="updated step1 normalization algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated step1 normalization algorithm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1113,16 +1118,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/steps/Step2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="518" max-vertical-offset="1065">
-          <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/analyze/GenHist.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08980583" vertical-offset="38" max-vertical-offset="450">
@@ -1147,21 +1142,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/steps/Step1.java">
+    <entry file="file://$PROJECT_DIR$/src/analyze/GenHist3D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="1035">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/steps/Step2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="438" max-vertical-offset="1065">
+          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/analyze/GenHist3D.java">
+    <entry file="file://$PROJECT_DIR$/src/steps/Step1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19660194" vertical-offset="39" max-vertical-offset="540">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding />
+        <state vertical-scroll-proportion="0.5135566" vertical-offset="338" max-vertical-offset="1050">
+          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
