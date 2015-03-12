@@ -41,16 +41,16 @@ public class Step2
             for (int j = 0; j < 40; j++)
                 l1NormTable[i][j] = new Entry2D(j, l1Norm[i][j]);
             Arrays.sort(l1NormTable[i]);
-            int[] unlike = new int[4], like = new int[4];
+            int[] unlike = new int[3], like = new int[3];
             int unlikeTotal = 0, likeTotal = 0;
             // fill unlike
-            for (int u = 0; u < 4; u++)
+            for (int u = 0; u < 3; u++)
             {
                 unlike[u] = l1NormTable[i][u].getJ();
                 unlikeTotal += unlike[u];
             }
             // fill like
-            for (int l = l1NormTable[i].length - 1; l >= l1NormTable[i].length - 4; l--)
+            for (int l = l1NormTable[i].length - 1; l >= l1NormTable[i].length - 3; l--)
             {
                 like[l1NormTable[i].length - 1 - l] = l1NormTable[i][l].getJ();
                 likeTotal += like[l1NormTable[i].length - 1 - l];
@@ -78,6 +78,6 @@ public class Step2
         for (LikeUnlike item : step2Res.getLikeUnlikes())
             System.out.println(item);
         PageGen pageGen = new PageGen();
-        pageGen.writePage("step1.html", "/Users/lee/Dropbox/VIC/assn2/images/jpg", step2Res);
+        pageGen.writePage("step2.html", "/Users/lee/Dropbox/VIC/assn2/images/jpg", step2Res);
     }
 }
