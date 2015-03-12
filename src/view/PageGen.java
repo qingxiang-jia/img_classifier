@@ -1,6 +1,7 @@
 package view;
 
 import analyze.LikeUnlike;
+import analyze.LikeUnlikes;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -8,13 +9,14 @@ import java.io.PrintWriter;
 public class PageGen
 {
     TagGen tagGen;
-    public void writePage(String pagename, String path, LikeUnlike[] data)
+    public void writePage(String pagename, String path, LikeUnlikes likeUnlikes)
     {
         tagGen = new TagGen();
         tagGen.setPath(path);
         StringBuilder sb = new StringBuilder();
 
         sb.append(tagGen.writeHeader());
+        LikeUnlike[] data = likeUnlikes.getLikeUnlikes();
         // generates contents
         for (LikeUnlike likeUnlike : data)
         {
@@ -39,6 +41,23 @@ public class PageGen
                 sb.append(tagGen.writeImg("i" + String.format("%02d", unlikeId + 1) + ".jpg"));
             sb.append(tagGen.writeDiv2());
         }
+        // display most like and most unlike
+        sb.append(tagGen.writeDiv1("most like"));
+        sb.append(tagGen.writeP("most like"));
+        sb.append(tagGen.writeP("pic " + (likeUnlikes.getMaxLikeIndex() + 1)));
+        sb.append(tagGen.writeImg("i" + String.format("%02d", likeUnlikes.getMaxLikeIndex() + 1) + ".jpg"));
+        for (int likeId : data[likeUnlikes.getMaxLikeIndex()].getLike())
+            sb.append(tagGen.writeImg("i" + String.format("%02d", likeId + 1) + ".jpg"));
+        sb.append(tagGen.writeDiv2());
+
+        sb.append(tagGen.writeDiv1("most unlike"));
+        sb.append(tagGen.writeP("most unlike"));
+        sb.append(tagGen.writeP("pic " + (likeUnlikes.getMaxUnlikeIndex() + 1)));
+        sb.append(tagGen.writeImg("i" + String.format("%02d", likeUnlikes.getMaxUnlikeIndex() + 1) + ".jpg"));
+        for (int unlikeId : data[likeUnlikes.getMaxUnlikeIndex()].getUnlike())
+            sb.append(tagGen.writeImg("i" + String.format("%02d", unlikeId + 1) + ".jpg"));
+        sb.append(tagGen.writeDiv2());
+
         sb.append(tagGen.writeTail());
         PrintWriter out = null;
         try {
