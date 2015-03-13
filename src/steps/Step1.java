@@ -4,6 +4,8 @@ import analyze.*;
 import view.PageGen;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Step1
 {
@@ -66,6 +68,7 @@ public class Step1
         }
         // for most alike/unlike, just compute the sum of l1 norm, and find the max/min
         LikeUnlikes likeUnlikesBasedOnColor = new LikeUnlikes(basedOnColor, maxUnlikeIndex, maxLikeIndex);
+        // compute the most alike/unlike in the pool of all 40 images
         return likeUnlikesBasedOnColor;
     }
 
