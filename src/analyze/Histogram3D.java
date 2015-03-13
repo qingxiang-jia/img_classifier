@@ -32,10 +32,7 @@ public class Histogram3D
             for (int g = 0; g < h1.rgb[0].length; g++)
                 for (int b = 0; b < h1.rgb[0][0].length; b++)
                     diff += Math.abs(h1.rgb[r][g][b] - h2.rgb[r][g][b]); //
-        System.out.println(diff);
-        System.out.println(h1.rgb.length + " " + h1.rgb[0].length + " " + h1.rgb[0][0].length);
-//        double res = 1 - (diff / ((h1.w * h1.h - h1.ignoreCount) + (h2.w * h2.h - h2.ignoreCount))); // suggested by Prof. K
-        double res = 1 - (diff / (2 * h2.w * h2.h)); // suggested by Prof. K
+        double res = 1 - (diff / ((h1.w * h1.h - h1.ignoreCount) + (h2.w * h2.h - h2.ignoreCount))); // suggested by Prof. K
         return res;
     }
 }
