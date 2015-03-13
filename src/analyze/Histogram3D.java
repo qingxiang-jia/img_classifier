@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Histogram3D
 {
     int binSize, w, h, ignoreCount;
-    int[][][] rgb;
+    int[][][] rgb; // 3D histogram
 
     public Histogram3D(int binSize, int[][][] rgb, int w, int h, int ignoreCount)
     {
@@ -31,9 +31,11 @@ public class Histogram3D
         for (int r = 0; r < h1.rgb.length; r++)
             for (int g = 0; g < h1.rgb[0].length; g++)
                 for (int b = 0; b < h1.rgb[0][0].length; b++)
-                    diff += Math.abs(h1.rgb[r][g][b] - h2.rgb[r][g][b]) / 255; // I did dividing by 255, but now I don't know why
-        double res = 1 - (diff / ((h1.w * h1.h - h1.ignoreCount) + (h2.w * h2.h - h2.ignoreCount))); // suggested by Prof. K
-//        System.out.println(res + " " + diff + " " + ((h1.w * h1.h - h1.ignoreCount) + (h2.w * h2.h - h2.ignoreCount)));
+                    diff += Math.abs(h1.rgb[r][g][b] - h2.rgb[r][g][b]); //
+        System.out.println(diff);
+        System.out.println(h1.rgb.length + " " + h1.rgb[0].length + " " + h1.rgb[0][0].length);
+//        double res = 1 - (diff / ((h1.w * h1.h - h1.ignoreCount) + (h2.w * h2.h - h2.ignoreCount))); // suggested by Prof. K
+        double res = 1 - (diff / (2 * h2.w * h2.h)); // suggested by Prof. K
         return res;
     }
 }

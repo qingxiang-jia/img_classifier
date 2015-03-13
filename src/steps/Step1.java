@@ -73,8 +73,8 @@ public class Step1
     public static void main(String[] args)
     {
         LikeUnlikes step1Res = Step1.runProcedure();
-        for (LikeUnlike item : step1Res.getLikeUnlikes())
-            System.out.println(item);
+//        for (LikeUnlike item : step1Res.getLikeUnlikes())
+//            System.out.println(item);
         PageGen pageGen = new PageGen();
         pageGen.writePage("step1.html", "/Users/lee/Dropbox/VIC/assn2/images/jpg", step1Res);
     }

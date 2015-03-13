@@ -21,7 +21,6 @@ public class Group
         for (int[] subset : sizedSubsets)
         {
             double local = pairwiseSimilaritySum(l1Norm, subset);
-            System.out.println(local);
             if (isMax && extrem < local)
             {
                 extrem = local;
@@ -33,7 +32,6 @@ public class Group
                 extremSet = subset;
             }
         }
-        System.out.println(Arrays.toString(extremSet) + " " + isMax);
         return extremSet;
     }
 
