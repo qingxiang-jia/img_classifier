@@ -2,15 +2,16 @@ package analyze;
 
 public class LikeUnlikes
 {
-    int maxUnlikeIndex, maxLikeIndex;
+    int maxUnlikeIndex, maxLikeIndex, unlikeGroup[], likeGroup[];
     LikeUnlike[] likeUnlikes;
 
-    public LikeUnlikes(LikeUnlike[] likeUnlikes, int maxUnlikeIndex, int maxLikeIndex)
+    public LikeUnlikes(LikeUnlike[] likeUnlikes, int maxUnlikeIndex, int maxLikeIndex, int[] unlikeGroup, int[] likeGroup)
     {
-
         this.likeUnlikes = likeUnlikes;
         this.maxUnlikeIndex = maxUnlikeIndex;
         this.maxLikeIndex = maxLikeIndex;
+        this.unlikeGroup = unlikeGroup;
+        this.likeGroup = likeGroup;
     }
 
     public int getMaxUnlikeIndex()
@@ -18,19 +19,9 @@ public class LikeUnlikes
         return maxUnlikeIndex;
     }
 
-    public void setMaxUnlikeIndex(int maxUnlikeIndex)
-    {
-        this.maxUnlikeIndex = maxUnlikeIndex;
-    }
-
     public int getMaxLikeIndex()
     {
         return maxLikeIndex;
-    }
-
-    public void setMaxLikeIndex(int maxLikeIndex)
-    {
-        this.maxLikeIndex = maxLikeIndex;
     }
 
     public LikeUnlike[] getLikeUnlikes()
@@ -38,8 +29,13 @@ public class LikeUnlikes
         return likeUnlikes;
     }
 
-    public void setLikeUnlikes(LikeUnlike[] likeUnlikes)
+    public int[] getUnlikeGroup()
     {
-        this.likeUnlikes = likeUnlikes;
+        return unlikeGroup;
+    }
+
+    public int[] getLikeGroup()
+    {
+        return likeGroup;
     }
 }

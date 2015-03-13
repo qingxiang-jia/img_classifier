@@ -41,20 +41,34 @@ public class PageGen
                 sb.append(tagGen.writeImg("i" + String.format("%02d", unlikeId + 1) + ".jpg"));
             sb.append(tagGen.writeDiv2());
         }
-        // display most like and most unlike
-        sb.append(tagGen.writeDiv1("most like"));
-        sb.append(tagGen.writeP("most like"));
+        // display most like and most unlike (computed in two styles)
+        // style 1 - approximation
+        sb.append(tagGen.writeDiv1("most like (approximation)"));
+        sb.append(tagGen.writeP("most like (approximation)"));
         sb.append(tagGen.writeP("pic " + (likeUnlikes.getMaxLikeIndex() + 1)));
         sb.append(tagGen.writeImg("i" + String.format("%02d", likeUnlikes.getMaxLikeIndex() + 1) + ".jpg"));
         for (int likeId : data[likeUnlikes.getMaxLikeIndex()].getLike())
             sb.append(tagGen.writeImg("i" + String.format("%02d", likeId + 1) + ".jpg"));
         sb.append(tagGen.writeDiv2());
 
-        sb.append(tagGen.writeDiv1("most unlike"));
-        sb.append(tagGen.writeP("most unlike"));
+        sb.append(tagGen.writeDiv1("most unlike (approximation)"));
+        sb.append(tagGen.writeP("most unlike (approximation)"));
         sb.append(tagGen.writeP("pic " + (likeUnlikes.getMaxUnlikeIndex() + 1)));
         sb.append(tagGen.writeImg("i" + String.format("%02d", likeUnlikes.getMaxUnlikeIndex() + 1) + ".jpg"));
         for (int unlikeId : data[likeUnlikes.getMaxUnlikeIndex()].getUnlike())
+            sb.append(tagGen.writeImg("i" + String.format("%02d", unlikeId + 1) + ".jpg"));
+        sb.append(tagGen.writeDiv2());
+
+        // style 2 - actual (max/min of sum of pairwise similarity)
+        sb.append(tagGen.writeDiv1("most like"));
+        sb.append(tagGen.writeP("most like"));
+        for (int likeId : likeUnlikes.getLikeGroup())
+            sb.append(tagGen.writeImg("i" + String.format("%02d", likeId + 1) + ".jpg"));
+        sb.append(tagGen.writeDiv2());
+
+        sb.append(tagGen.writeDiv1("most unlike"));
+        sb.append(tagGen.writeP("most unlike"));
+        for (int unlikeId : likeUnlikes.getUnlikeGroup())
             sb.append(tagGen.writeImg("i" + String.format("%02d", unlikeId + 1) + ".jpg"));
         sb.append(tagGen.writeDiv2());
 

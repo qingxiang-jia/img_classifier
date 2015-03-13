@@ -4,8 +4,6 @@ import analyze.*;
 import view.PageGen;
 
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
 
 public class Step1
 {
@@ -66,9 +64,9 @@ public class Step1
             }
             basedOnColor[i] = new LikeUnlike(i, like, unlike); // store solution
         }
-        // for most alike/unlike, just compute the sum of l1 norm, and find the max/min
-        LikeUnlikes likeUnlikesBasedOnColor = new LikeUnlikes(basedOnColor, maxUnlikeIndex, maxLikeIndex);
-        // compute the most alike/unlike in the pool of all 40 images
+        // compute the most like/unlike in the pool of all 40 images (new approach)
+        // for most like/unlike, just compute the sum of l1 norm, and find the max/min (old approach)
+        LikeUnlikes likeUnlikesBasedOnColor = new LikeUnlikes(basedOnColor, maxUnlikeIndex, maxLikeIndex, Group.getGroupByL1Norm(l1Norm, 4, false), Group.getGroupByL1Norm(l1Norm, 4, true));
         return likeUnlikesBasedOnColor;
     }
 

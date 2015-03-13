@@ -7,7 +7,7 @@ import com.google.common.collect.Sets;
 /**
  * Generates subsets of size n from set of size N.
  */
-public class SizedSubset
+public class SizedSubsetDeprecated
 {
     public static List<int[]> getSizedSubsets(int n, int N)
     {
@@ -33,7 +33,7 @@ public class SizedSubset
     // quick test
     public static void main(String[] args)
     {
-        List<int[]> res = SizedSubset.getSizedSubsets(3, 5);
+        List<int[]> res = SizedSubsetDeprecated.getSizedSubsets(3, 5);
         for (int[] arr : res)
             System.out.println(Arrays.toString(arr));
     }

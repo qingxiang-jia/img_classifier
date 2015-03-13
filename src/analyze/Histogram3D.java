@@ -28,11 +28,12 @@ public class Histogram3D
     {
         assert(h1.binSize == h2.binSize && h1.w == h2.w && h1.h == h2.h);
         double diff = 0;
-        for (int r = 0; r < h1.rgb.length; r++) // for each nested iteration, raising initial value to ignore dark color
+        for (int r = 0; r < h1.rgb.length; r++)
             for (int g = 0; g < h1.rgb[0].length; g++)
                 for (int b = 0; b < h1.rgb[0][0].length; b++)
-                    diff += Math.abs(h1.rgb[r][g][b] - h2.rgb[r][g][b]);
+                    diff += Math.abs(h1.rgb[r][g][b] - h2.rgb[r][g][b]) / 255; // I did dividing by 255, but now I don't know why
         double res = 1 - (diff / ((h1.w * h1.h - h1.ignoreCount) + (h2.w * h2.h - h2.ignoreCount))); // suggested by Prof. K
+//        System.out.println(res + " " + diff + " " + ((h1.w * h1.h - h1.ignoreCount) + (h2.w * h2.h - h2.ignoreCount)));
         return res;
     }
 }

@@ -68,7 +68,7 @@ public class Step2
             basedOnTexture[i] = new LikeUnlike(i, like, unlike); // store solution
         }
         // for most alike/unlike, just compute the sum of l1 norm, and find the max/min
-        LikeUnlikes likeUnlikesBasedOnTexture = new LikeUnlikes(basedOnTexture, maxUnlikeIndex, maxLikeIndex);
+        LikeUnlikes likeUnlikesBasedOnTexture = new LikeUnlikes(basedOnTexture, maxUnlikeIndex, maxLikeIndex, Group.getGroupByL1Norm(l1Norm, 4, false), Group.getGroupByL1Norm(l1Norm, 4, true));
         return likeUnlikesBasedOnTexture;
     }
 
