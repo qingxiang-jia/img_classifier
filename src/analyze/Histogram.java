@@ -2,15 +2,16 @@ package analyze;
 
 public class Histogram
 {
-    int binSize, w, h;
+    int binSize, w, h, ignoreCount;
     int[] bin; // for both negative values (first portion) and positive values (second portion)
 
-    public Histogram(int binSize, int[] bin, int w, int h)
+    public Histogram(int binSize, int[] bin, int w, int h, int ignoreCount)
     {
         this.binSize = binSize;
         this.bin = bin;
         this.w = w;
         this.h = h;
+        this.ignoreCount = ignoreCount;
     }
 
     // returns the L1 norm of h1 and h2
@@ -21,7 +22,13 @@ public class Histogram
         double sumDiff = 0.0;
         for (int n = 0; n < N; n++)
             sumDiff += Math.abs(h1.bin[n] - h2.bin[n]);
-        double res = 1 - (sumDiff / (2 * h1.w * h1.h));
+        double res = 1 - (sumDiff / ((h1.w * h1.h - h1.ignoreCount) + (h2.w * h2.h - h2.ignoreCount)));
+        System.out.println(res);
         return res;
+    }
+
+    public int[] getBin()
+    {
+        return bin;
     }
 }

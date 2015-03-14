@@ -10,15 +10,20 @@ public class GenHist
         int[][] laplacian = Laplace.gray2Laplacian(gray);
         // generate histogram, [-255*8, 255*8]
         int[] negBin = new int[256*8 / binSize], nonNegBin = new int[256*8 / binSize];
-        int W = gray.length, H = gray[0].length;
+        int W = gray.length, H = gray[0].length, ignoreCount = 0;
         for (int w = 0; w < W; w++)
             for (int h = 0; h < H; h++)
             {
-                if (gray[w][h] < 0)
-                    negBin[gray[w][h] / binSize]++;
+                if (Math.abs(laplacian[w][h]) < 5)
+                {
+                    ignoreCount++;
+                    continue;
+                }
+                if (laplacian[w][h] < 0)
+                    negBin[-(laplacian[w][h] / binSize)]++; // index is positive
                 else
-                    nonNegBin[gray[w][h] / binSize]++;
+                    nonNegBin[laplacian[w][h] / binSize]++;
             }
-        return new Histogram(binSize, Arr.concatIntArrs(negBin, nonNegBin), W, H);
+        return new Histogram(binSize, Arr.concatIntArrs(negBin, nonNegBin), W, H, ignoreCount);
     }
 }
