@@ -1,9 +1,12 @@
 package steps;
 
 import analyze.*;
+import analyze.cluster.ClusterRunner;
+import util.S2D;
 import view.PageGen;
 
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * Sort of a combined version of Step1 and 2. The only difference is that the new "L1 Norm" will depend on
@@ -62,6 +65,11 @@ public class Step3
             for (int j = 0; j < 40; j++)
                 l1Norm[i][j] = r * l1NormColor[i][j] + (1.0 - r) * l1NormTexture[i][j];
 
+        /** clustering **/
+        List<int[]> clusters = ClusterRunner.completeLink(S2D.convert(l1Norm), 7);
+        for (int[] cluster : clusters)
+            System.out.println(Arrays.toString(cluster));
+
         // convert results into Entry2D and find the most like and unlike
         int maxUnlikeIndex = 0, maxLikeIndex = 0, maxUnlikeVal = 0, maxLikeVal = 0;
         Entry2D[][] l1NormTable = new Entry2D[40][40];
@@ -104,7 +112,7 @@ public class Step3
 
     public static void main(String[] args)
     {
-        for (int i = 1; i < 10; i++)
+        for (int i = 7; i < 8; i++)
         {
             LikeUnlikes step3Res = Step3.runProcedure(0.1*i);
             PageGen pageGen = new PageGen();

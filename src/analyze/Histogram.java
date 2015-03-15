@@ -23,7 +23,7 @@ public class Histogram
         for (int n = 0; n < N; n++)
             sumDiff += Math.abs(h1.bin[n] - h2.bin[n]);
         double res = 1 - (sumDiff / ((h1.w * h1.h - h1.ignoreCount) + (h2.w * h2.h - h2.ignoreCount)));
-        System.out.println(res);
+//        System.out.println(res);
         return res;
     }
 
