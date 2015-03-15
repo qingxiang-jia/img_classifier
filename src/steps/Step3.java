@@ -120,7 +120,7 @@ public class Step3
 
     public static void main(String[] args)
     {
-        for (int i = 7; i < 8; i++)
+        for (int i = 0; i < 9; i++)
         {
             LikeUnlikes step3Res = Step3.runProcedure(0.1*i);
             PageGen pageGen = new PageGen();
