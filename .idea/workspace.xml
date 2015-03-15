@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a76770e8-81cb-4323-ac52-6dcbb37ea29e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/analyze/Histogram.java" afterPath="$PROJECT_DIR$/src/analyze/Histogram.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/analyze/LikeUnlikes.java" afterPath="$PROJECT_DIR$/src/analyze/LikeUnlikes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/PageGen.java" afterPath="$PROJECT_DIR$/src/view/PageGen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/steps/Step3.java" afterPath="$PROJECT_DIR$/src/steps/Step3.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -42,8 +43,8 @@
       <file leaf-file-name="Step3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/steps/Step3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.1065376" vertical-offset="1507" max-vertical-offset="1920">
-              <caret line="70" column="57" selection-start-line="70" selection-start-column="57" selection-end-line="70" selection-end-column="57" />
+            <state vertical-scroll-proportion="1.1452785" vertical-offset="1147" max-vertical-offset="1920">
+              <caret line="108" column="151" selection-start-line="108" selection-start-column="151" selection-end-line="108" selection-end-column="151" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,34 +52,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Histogram3D.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/analyze/Histogram3D.java">
+      <file leaf-file-name="PageGen.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/PageGen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="660">
-              <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1560">
+              <caret line="83" column="113" selection-start-line="83" selection-start-column="113" selection-end-line="83" selection-end-column="113" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Img.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/util/Img.java">
+      <file leaf-file-name="LikeUnlikes.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/analyze/LikeUnlikes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="118" max-vertical-offset="555">
-              <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="487" max-vertical-offset="900">
+              <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
               <folding>
-                <element signature="method#readPPM#0;class#Img#0" expanded="false" />
+                <element signature="e#1612#1613#0" expanded="true" />
+                <element signature="e#1658#1659#0" expanded="true" />
+                <element signature="e#1691#1692#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenHist.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/analyze/GenHist.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="525">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -161,8 +154,6 @@
         <option value="$PROJECT_DIR$/src/analyze/LikeUnlike.java" />
         <option value="$PROJECT_DIR$/src/analyze/NumSubset.java" />
         <option value="$PROJECT_DIR$/src/analyze/SizedSubset.java" />
-        <option value="$PROJECT_DIR$/src/analyze/LikeUnlikes.java" />
-        <option value="$PROJECT_DIR$/src/view/PageGen.java" />
         <option value="$PROJECT_DIR$/src/util/KSubSet.java" />
         <option value="$PROJECT_DIR$/src/util/SizedSubset.java" />
         <option value="$PROJECT_DIR$/src/steps/Step1.java" />
@@ -176,7 +167,9 @@
         <option value="$PROJECT_DIR$/src/analyze/cluster/Intermediate.java" />
         <option value="$PROJECT_DIR$/src/analyze/cluster/ClusterRunner.java" />
         <option value="$PROJECT_DIR$/src/analyze/Histogram.java" />
+        <option value="$PROJECT_DIR$/src/analyze/LikeUnlikes.java" />
         <option value="$PROJECT_DIR$/src/steps/Step3.java" />
+        <option value="$PROJECT_DIR$/src/view/PageGen.java" />
       </list>
     </option>
   </component>
@@ -819,7 +812,13 @@
       <option name="project" value="LOCAL" />
       <updated>1426444018309</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="complete link easy test passed">
+      <created>1426445969745</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1426445969745</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -844,7 +843,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.209375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32671756" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32671756" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -891,7 +890,8 @@
     <MESSAGE value="step3 half done" />
     <MESSAGE value="added S2D and decided to implement clustering myself" />
     <MESSAGE value="finished complete link implementation, going to test it" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished complete link implementation, going to test it" />
+    <MESSAGE value="complete link easy test passed" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete link easy test passed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1169,13 +1169,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/analyze/LikeUnlikes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="293" max-vertical-offset="705">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/util/SizedSubset.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1373" max-vertical-offset="1785">
@@ -1215,13 +1208,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="618" max-vertical-offset="1245">
           <caret line="79" column="5" selection-start-line="72" selection-start-column="4" selection-end-line="79" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/PageGen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09569378" vertical-offset="0" max-vertical-offset="1335">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1301,10 +1287,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/analyze/LikeUnlikes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="487" max-vertical-offset="900">
+          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+          <folding>
+            <element signature="e#1612#1613#0" expanded="true" />
+            <element signature="e#1658#1659#0" expanded="true" />
+            <element signature="e#1691#1692#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/PageGen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1560">
+          <caret line="83" column="113" selection-start-line="83" selection-start-column="113" selection-end-line="83" selection-end-column="113" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/steps/Step3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1065376" vertical-offset="1507" max-vertical-offset="1920">
-          <caret line="70" column="57" selection-start-line="70" selection-start-column="57" selection-end-line="70" selection-end-column="57" />
+        <state vertical-scroll-proportion="1.1452785" vertical-offset="1147" max-vertical-offset="1920">
+          <caret line="108" column="151" selection-start-line="108" selection-start-column="151" selection-end-line="108" selection-end-column="151" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
