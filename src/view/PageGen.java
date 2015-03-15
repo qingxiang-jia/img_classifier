@@ -87,6 +87,20 @@ public class PageGen
             sb.append(tagGen.writeDiv2());
         }
 
+        if (likeUnlikes.getSingleLink() != null)
+        {
+            sb.append(tagGen.writeDiv1("cluster - single link"));
+            sb.append(tagGen.writeP("cluster - single link"));
+            for (int i = 0; i < likeUnlikes.getSingleLink().size(); i++) // a cluster
+            {
+                sb.append(tagGen.writeDiv1("cluster - single link"+i));
+                for (int j = 0; j < likeUnlikes.getSingleLink().get(i).length; j++)
+                    sb.append(tagGen.writeImg("i" + String.format("%02d", likeUnlikes.getSingleLink().get(i)[j] + 1) + ".jpg"));
+                sb.append(tagGen.writeDiv2());
+            }
+            sb.append(tagGen.writeDiv2());
+        }
+
         sb.append(tagGen.writeTail());
         PrintWriter out = null;
         try {

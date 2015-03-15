@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a76770e8-81cb-4323-ac52-6dcbb37ea29e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/analyze/LikeUnlikes.java" afterPath="$PROJECT_DIR$/src/analyze/LikeUnlikes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/analyze/cluster/ClusterRunner.java" afterPath="$PROJECT_DIR$/src/analyze/cluster/ClusterRunner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/PageGen.java" afterPath="$PROJECT_DIR$/src/view/PageGen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/steps/Step3.java" afterPath="$PROJECT_DIR$/src/steps/Step3.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -40,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Step3.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Step3.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/steps/Step3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1452785" vertical-offset="1147" max-vertical-offset="1920">
-              <caret line="108" column="151" selection-start-line="108" selection-start-column="151" selection-end-line="108" selection-end-column="151" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1563" max-vertical-offset="2040">
+              <caret line="116" column="246" selection-start-line="116" selection-start-column="246" selection-end-line="116" selection-end-column="246" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,8 +55,8 @@
       <file leaf-file-name="PageGen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/PageGen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1560">
-              <caret line="83" column="113" selection-start-line="83" selection-start-column="113" selection-end-line="83" selection-end-column="113" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1237" max-vertical-offset="1770">
+              <caret line="97" column="101" selection-start-line="97" selection-start-column="101" selection-end-line="97" selection-end-column="101" />
               <folding />
             </state>
           </provider>
@@ -76,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClusterRunner.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ClusterRunner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/analyze/cluster/ClusterRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
-              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.7457627" vertical-offset="757" max-vertical-offset="1170">
+              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,11 +165,11 @@
         <option value="$PROJECT_DIR$/src/util/S2D.java" />
         <option value="$PROJECT_DIR$/src/analyze/ClusterRunner.java" />
         <option value="$PROJECT_DIR$/src/analyze/cluster/Intermediate.java" />
-        <option value="$PROJECT_DIR$/src/analyze/cluster/ClusterRunner.java" />
         <option value="$PROJECT_DIR$/src/analyze/Histogram.java" />
         <option value="$PROJECT_DIR$/src/analyze/LikeUnlikes.java" />
-        <option value="$PROJECT_DIR$/src/steps/Step3.java" />
         <option value="$PROJECT_DIR$/src/view/PageGen.java" />
+        <option value="$PROJECT_DIR$/src/steps/Step3.java" />
+        <option value="$PROJECT_DIR$/src/analyze/cluster/ClusterRunner.java" />
       </list>
     </option>
   </component>
@@ -818,7 +818,13 @@
       <option name="project" value="LOCAL" />
       <updated>1426445969745</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="complete link finished, start working on single link">
+      <created>1426447447795</created>
+      <option name="number" value="00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1426447447795</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -866,7 +872,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="restructured the project" />
     <MESSAGE value="done with step1, but not yet tested Step1, and also need to wait for TA's response." />
     <MESSAGE value="Update the step1 L1 Norm algorithm, add presentation component &quot;view&quot;" />
     <MESSAGE value="working on step2, i will call it a day" />
@@ -891,7 +896,8 @@
     <MESSAGE value="added S2D and decided to implement clustering myself" />
     <MESSAGE value="finished complete link implementation, going to test it" />
     <MESSAGE value="complete link easy test passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete link easy test passed" />
+    <MESSAGE value="complete link finished, start working on single link" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete link finished, start working on single link" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1243,16 +1249,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/analyze/cluster/ClusterRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1095">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/analyze/GenHist.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="525">
@@ -1301,16 +1297,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/PageGen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1560">
-          <caret line="83" column="113" selection-start-line="83" selection-start-column="113" selection-end-line="83" selection-end-column="113" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1237" max-vertical-offset="1770">
+          <caret line="97" column="101" selection-start-line="97" selection-start-column="101" selection-end-line="97" selection-end-column="101" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/steps/Step3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1452785" vertical-offset="1147" max-vertical-offset="1920">
-          <caret line="108" column="151" selection-start-line="108" selection-start-column="151" selection-end-line="108" selection-end-column="151" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1563" max-vertical-offset="2040">
+          <caret line="116" column="246" selection-start-line="116" selection-start-column="246" selection-end-line="116" selection-end-column="246" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/analyze/cluster/ClusterRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7457627" vertical-offset="757" max-vertical-offset="1170">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -66,8 +66,16 @@ public class Step3
                 l1Norm[i][j] = r * l1NormColor[i][j] + (1.0 - r) * l1NormTexture[i][j];
 
         /** clustering **/
-        List<int[]> clustersCompleteLink = ClusterRunner.completeLink(S2D.convert(l1Norm), 7);
+        List<int[]> clustersCompleteLink = ClusterRunner.cluster(S2D.convert(l1Norm), 7, ClusterRunner.CL);
+        System.out.println("complete link clustering");
         for (int[] cluster : clustersCompleteLink)
+            System.out.println(Arrays.toString(cluster));
+
+        System.out.println();
+
+        List<int[]> clustersSingleLink = ClusterRunner.cluster(S2D.convert(l1Norm), 7, ClusterRunner.SL);
+        System.out.println("single link clustering");
+        for (int[] cluster : clustersSingleLink)
             System.out.println(Arrays.toString(cluster));
 
         // convert results into Entry2D and find the most like and unlike
@@ -106,7 +114,7 @@ public class Step3
         }
         // compute the most like/unlike in the pool of all 40 images (new approach)
         // for most like/unlike, just compute the sum of l1 norm, and find the max/min (old approach)
-        LikeUnlikes likeUnlikesColorTexture = new LikeUnlikes(basedOnColorTexture, maxUnlikeIndex, maxLikeIndex, Group.getGroupByL1Norm(l1NormColor, 4, false), Group.getGroupByL1Norm(l1NormColor, 4, true), clustersCompleteLink, null);
+        LikeUnlikes likeUnlikesColorTexture = new LikeUnlikes(basedOnColorTexture, maxUnlikeIndex, maxLikeIndex, Group.getGroupByL1Norm(l1NormColor, 4, false), Group.getGroupByL1Norm(l1NormColor, 4, true), clustersCompleteLink, clustersSingleLink);
         return likeUnlikesColorTexture;
     }
 

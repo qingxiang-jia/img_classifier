@@ -12,7 +12,9 @@ import java.util.List;
  */
 public class ClusterRunner
 {
-    public static List<int[]> completeLink(double[][] distance, int finalSize)
+    public static final int CL = 0, SL = 1;
+
+    public static List<int[]> cluster(double[][] distance, int finalSize, int mode)
     {
         assert (distance.length == distance[0].length);
         List<int[]> clusters = new LinkedList<>();
@@ -29,27 +31,32 @@ public class ClusterRunner
             for (int i = 0; i < clusters.size(); i++) // each cluster compares with the rest, each saves the minimum,
                                                       // them take the global minimum out of the local minimum
                                                       // merge the corresponding two clusters
-            {
                 for (int j = i + 1; j < clusters.size(); j++)
                 {
-                    double resultIJ = compareClusterCL(distance, clusters.get(i), clusters.get(j));
+                    double resultIJ = compareCluster(distance, clusters.get(i), clusters.get(j), mode);
                     if (mergeCandidate == null || resultIJ < mergeCandidate.val)
                         mergeCandidate = new Intermediate(clusters.get(i), clusters.get(j), resultIJ);
                 }
-            }
             /** merge two clusters **/
             mergeClusters(clusters, mergeCandidate);
         }
         return clusters;
     }
 
-    private static double compareClusterCL(double[][] distance, int[] cluster1, int[] cluster2)
+    private static double compareCluster(double[][] distance, int[] cluster1, int[] cluster2, int mode)
     {
-        double maxDist = -Double.MAX_VALUE;
+        double maxDist;
+        if (mode == CL) maxDist = -Double.MAX_VALUE;
+        else maxDist = Double.MAX_VALUE;
+
         for (int imgFrom1 : cluster1)
             for (int imgFrom2 : cluster2)
-                if (distance[imgFrom1][imgFrom2] > maxDist)
+            {
+                if (mode == CL && distance[imgFrom1][imgFrom2] > maxDist)
                     maxDist = distance[imgFrom1][imgFrom2];
+                if (mode == SL && distance[imgFrom1][imgFrom2] < maxDist)
+                    maxDist = distance[imgFrom1][imgFrom2];
+            }
         return maxDist;
     }
 
@@ -62,6 +69,4 @@ public class ClusterRunner
         clusters.remove(cluster2);
         clusters.add(mergedCluster);
     }
-
-
 }
