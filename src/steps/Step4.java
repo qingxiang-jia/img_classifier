@@ -2,6 +2,7 @@ package steps;
 
 import analyze.LikeUnlike;
 import analyze.LikeUnlikes;
+import analyze.Rand;
 import util.Arr;
 import util.IOTool;
 import util.UserReport;
@@ -75,6 +76,7 @@ public class Step4
         score[1] = step2Score;
 
         /** eval step3 **/
+        score[2] = Rand.compute(report.getClusters(), clustersCompleteLink);
         return score;
     }
 
