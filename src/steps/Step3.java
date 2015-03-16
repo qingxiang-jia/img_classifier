@@ -2,6 +2,7 @@ package steps;
 
 import analyze.*;
 import analyze.cluster.ClusterRunner;
+import util.IOTool;
 import util.S2D;
 import view.PageGen;
 
@@ -67,6 +68,7 @@ public class Step3
 
         /** clustering **/
         List<int[]> clustersCompleteLink = ClusterRunner.cluster(S2D.convert(l1Norm), 7, ClusterRunner.CL);
+        IOTool.toFile("clusterCompleteLink.ser", clustersCompleteLink);
         System.out.println("complete link clustering");
         for (int[] cluster : clustersCompleteLink)
             System.out.println(Arrays.toString(cluster));
@@ -74,6 +76,7 @@ public class Step3
         System.out.println();
 
         List<int[]> clustersSingleLink = ClusterRunner.cluster(S2D.convert(l1Norm), 7, ClusterRunner.SL);
+        IOTool.toFile("clustersSingleLink.ser", clustersSingleLink);
         System.out.println("single link clustering");
         for (int[] cluster : clustersSingleLink)
             System.out.println(Arrays.toString(cluster));

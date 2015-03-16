@@ -1,6 +1,7 @@
 package steps;
 
 import analyze.*;
+import util.IOTool;
 import view.PageGen;
 
 import java.util.Arrays;
@@ -73,6 +74,7 @@ public class Step1
     public static void main(String[] args)
     {
         LikeUnlikes step1Res = Step1.runProcedure();
+        IOTool.toFile("step1Res.ser", step1Res);
 //        for (LikeUnlike item : step1Res.getLikeUnlikes())
 //            System.out.println(item);
         PageGen pageGen = new PageGen();

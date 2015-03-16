@@ -1,8 +1,9 @@
 package analyze;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class LikeUnlikes
+public class LikeUnlikes implements Serializable
 {
     int maxUnlikeIndex, maxLikeIndex, unlikeGroup[], likeGroup[];
     LikeUnlike[] likeUnlikes;

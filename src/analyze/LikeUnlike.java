@@ -1,8 +1,9 @@
 package analyze;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class LikeUnlike
+public class LikeUnlike implements Serializable
 {
     int id; // could be picture sequence number
     int[] like;
