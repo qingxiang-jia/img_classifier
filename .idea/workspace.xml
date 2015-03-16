@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a76770e8-81cb-4323-ac52-6dcbb37ea29e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/analyze/NChooseK.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/analyze/Rand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/analyze/Jaccard.java" afterPath="$PROJECT_DIR$/src/analyze/Jaccard.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/steps/Step4.java" afterPath="$PROJECT_DIR$/src/steps/Step4.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -113,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Step4.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Step4.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/steps/Step4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1012" max-vertical-offset="1425">
-              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.30992737" vertical-offset="997" max-vertical-offset="1440">
+              <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rand.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Rand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/analyze/Rand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5811138" vertical-offset="285" max-vertical-offset="780">
-              <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="367" max-vertical-offset="780">
+              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -214,8 +211,8 @@
         <option value="$PROJECT_DIR$/src/util/Arr.java" />
         <option value="$PROJECT_DIR$/src/analyze/Jaccard.java" />
         <option value="$PROJECT_DIR$/src/analyze/NChooseK.java" />
-        <option value="$PROJECT_DIR$/src/steps/Step4.java" />
         <option value="$PROJECT_DIR$/src/analyze/Rand.java" />
+        <option value="$PROJECT_DIR$/src/steps/Step4.java" />
       </list>
     </option>
   </component>
@@ -901,7 +898,13 @@
       <option name="project" value="LOCAL" />
       <updated>1426533404605</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="fixed a bug in Rand Index computation (yes, I went to Rand Index in addition to Jaccard)">
+      <created>1426547885660</created>
+      <option name="number" value="00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1426547885660</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -926,7 +929,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.209375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32671756" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32671756" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -949,7 +952,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="last push before go to class" />
     <MESSAGE value="experimenting step1's reducing black ground" />
     <MESSAGE value="ignore black color for step1" />
     <MESSAGE value="finished step2 (excluding the four part)" />
@@ -974,7 +976,8 @@
     <MESSAGE value="dinner!" />
     <MESSAGE value="partially done with step4, adding serialization for each step to store intermediate result for step4 to evaluate. also very disappointed by the assignment 1 grade deduction." />
     <MESSAGE value="done with evaluation of step1 and step2, decided to implement Jaccard index to compare two clusters" />
-    <option name="LAST_COMMIT_MESSAGE" value="done with evaluation of step1 and step2, decided to implement Jaccard index to compare two clusters" />
+    <MESSAGE value="fixed a bug in Rand Index computation (yes, I went to Rand Index in addition to Jaccard)" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed a bug in Rand Index computation (yes, I went to Rand Index in addition to Jaccard)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1361,20 +1364,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/steps/Step4.java">
+    <entry file="file://$PROJECT_DIR$/src/analyze/Rand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1012" max-vertical-offset="1425">
-          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="367" max-vertical-offset="780">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/analyze/Rand.java">
+    <entry file="file://$PROJECT_DIR$/src/steps/Step4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5811138" vertical-offset="285" max-vertical-offset="780">
-          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.30992737" vertical-offset="997" max-vertical-offset="1440">
+          <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

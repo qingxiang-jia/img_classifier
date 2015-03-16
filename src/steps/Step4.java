@@ -77,6 +77,7 @@ public class Step4
 
         /** eval step3 **/
         score[2] = Rand.compute(report.getClusters(), clustersCompleteLink);
+        score[3] = Rand.compute(report.getClusters(), clustersSingleLink);
         return score;
     }
 
