@@ -3,6 +3,8 @@ package util;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Arrays;
 import java.util.List;
 
 public class UserReportReader
@@ -40,7 +42,7 @@ public class UserReportReader
                 state = STEP3;
                 seq = 0;
             }
-            else if (line.startsWith("@"))
+            else if (line.startsWith("@") || line.length() == 0)
                 continue;
             else
             {
@@ -56,11 +58,18 @@ public class UserReportReader
                 {
                     step3[seq] = new int[tokens.length];
                     for (int i = 0; i < tokens.length; i++)
-                        step3[seq][i] = step3[seq][i];
+                        step3[seq][i] = Integer.parseInt(tokens[i]);
                 }
                 seq++;
             }
         }
         return new UserReport(step1, step2, step3);
+    }
+
+    // quick test
+    public static void main(String[] args)
+    {
+        UserReport li = UserReportReader.genUserReport(Paths.get("/Users/lee/Dropbox/VIC/assn2/Peiqian_Li.txt"));
+        li.out();
     }
 }
